@@ -39,12 +39,15 @@ The Infrared Remote Control Switch is a simple electronic circuit that uses an i
 ### Working:
 When a button on the IR remote is pressed, it sends a modulated 38kHz IR signal which is received by the TSOP1738. The TSOP demodulates the signal and produces a low pulse which is fed into the base of the first 2N4403 transistor, acting as an amplifier. This transistor then provides a strong triggering signal to the CD4027 flip-flop IC, which is wired to toggle its output state with each pulse received. The output from the flip-flop then controls the base of a second 2N4403 transistor, which functions as a switch to drive a 5V relay. When the flip-flop output goes high, the transistor conducts and energizes the relay coil, turning ON the connected load. On receiving the next IR pulse, the output toggles low, deactivating the relay and turning OFF the load. An LED indicator connected in parallel with the relay provides a visual cue of the ON/OFF status. The 1N4007 diode across the relay protects the circuit from voltage spikes due to back EMF when the relay is switched OFF. This toggling operation continues every time a button on the IR remote is pressed, making it suitable for simple wireless control applications.
 ## CIRCUIT DIAGRAM:
-![image](https://github.com/user-attachments/assets/3e488286-ea7d-4a9b-a057-02a31fdf4430)
+
+![Screenshot 2025-04-28 200734](https://github.com/user-attachments/assets/1f326bfd-b130-49cd-bc78-dc437690d3b8)
+
 
 ## EXPECTED OUTPUT:
 ### Schematic diagram
- 
-### Layout diagram
- 
+![Screenshot 2025-04-28 200753](https://github.com/user-attachments/assets/de7f5f1a-8dbc-4eee-92c2-3d5a9382f56d)
+![Screenshot 2025-04-28 200809](https://github.com/user-attachments/assets/a5530347-1dbf-4aff-a9c4-4361fd457cc4)
+
+
 ## RESULT:
 Thus, the schematic and PCB layout for the Infrared remote control circuit has been successfully designed using Eagle software.
